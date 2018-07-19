@@ -1,0 +1,11 @@
+testcases/LoginTest.class
+pageobjects/Manager/TextmercatoProfilePage.class
+pageobjects/Manager/DashboardPage.class
+pageobjects/Writer/DashboardPage.class
+testcases/TextmercatoEndEndFlow.class
+pageobjects/Manager/TextmercatoLogin.class
+pageobjects/Manager/SubmittedPage.class
+pageobjects/Writer/SubmitArticlesPage.class
+pageobjects/Manager/ProjectSummaryPage.class
+pageobjects/Editor/ProjectsUnderReviewPage.class
+pageobjects/Editor/DashboardPage.class

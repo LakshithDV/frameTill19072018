@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="TestName(failed)">
+    <classes>
+      <class name="testcases.TextmercatoEndEndFlow">
+        <methods>
+          <include name="setUp"/>
+          <include name="CreateTestLogPath"/>
+          <include name="editor_ApproveAndRejectArticles"/>
+          <include name="close"/>
+          <include name="invokeBrowser"/>
+          <include name="reportWrapUp"/>
+        </methods>
+      </class> <!-- testcases.TextmercatoEndEndFlow -->
+    </classes>
+  </test> <!-- TestName(failed) -->
+</suite> <!-- Failed suite [Suite] -->

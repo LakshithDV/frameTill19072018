@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="8" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="322991" started-at="2018-07-12T04:35:57Z" finished-at="2018-07-12T04:41:20Z">
+    <groups>
+    </groups>
+    <test name="TestName" duration-ms="322991" started-at="2018-07-12T04:35:57Z" finished-at="2018-07-12T04:41:20Z">
+      <class name="testcases.TextmercatoEndEndFlow">
+        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="CreateTestLogPath" is-config="true" duration-ms="6" started-at="2018-07-12T10:05:57Z" finished-at="2018-07-12T10:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTestLogPath -->
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="invokeBrowser" is-config="true" duration-ms="0" started-at="2018-07-12T10:05:57Z" finished-at="2018-07-12T10:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="6453" started-at="2018-07-12T10:05:57Z" finished-at="2018-07-12T10:06:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_CreateProject()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_CreateProject()[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="manager_CreateProject" duration-ms="114518" started-at="2018-07-12T10:06:04Z" finished-at="2018-07-12T10:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manager_CreateProject -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="76" started-at="2018-07-12T10:07:58Z" finished-at="2018-07-12T10:07:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_CreateProject status=SUCCESS method=TextmercatoEndEndFlow.manager_CreateProject()[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_CreateProject()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="979" started-at="2018-07-12T10:07:58Z" finished-at="2018-07-12T10:07:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_SubmitArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="writer_SubmitArticles()[pri:1, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="writer_SubmitArticles" duration-ms="44262" started-at="2018-07-12T10:07:59Z" finished-at="2018-07-12T10:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writer_SubmitArticles -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="71" started-at="2018-07-12T10:08:44Z" finished-at="2018-07-12T10:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=writer_SubmitArticles status=SUCCESS method=TextmercatoEndEndFlow.writer_SubmitArticles()[pri:1, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_SubmitArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="547" started-at="2018-07-12T10:08:44Z" finished-at="2018-07-12T10:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_ReviewArticles()[pri:2, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="manager_ReviewArticles" duration-ms="39419" started-at="2018-07-12T10:08:44Z" finished-at="2018-07-12T10:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manager_ReviewArticles -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="70" started-at="2018-07-12T10:09:24Z" finished-at="2018-07-12T10:09:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_ReviewArticles status=SUCCESS method=TextmercatoEndEndFlow.manager_ReviewArticles()[pri:2, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="590" started-at="2018-07-12T10:09:24Z" finished-at="2018-07-12T10:09:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="editor_ApproveAndRejectArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="editor_ApproveAndRejectArticles" duration-ms="12909" started-at="2018-07-12T10:09:24Z" finished-at="2018-07-12T10:09:37Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: ab2bb556219768107afb64492ec075fe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: ab2bb556219768107afb64492ec075fe
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at utils.WebBasePage.clickElement(WebBasePage.java:69)
+	at pageobjects.Editor.ProjectsUnderReviewPage.approveAndRejectProject(ProjectsUnderReviewPage.java:42)
+	at testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles(TextmercatoEndEndFlow.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editor_ApproveAndRejectArticles -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="295" started-at="2018-07-12T10:09:37Z" finished-at="2018-07-12T10:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editor_ApproveAndRejectArticles status=FAILURE method=TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="621" started-at="2018-07-12T10:09:38Z" finished-at="2018-07-12T10:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_reviewArticlesSubmittedByEditor()[pri:4, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="manager_reviewArticlesSubmittedByEditor" duration-ms="37900" started-at="2018-07-12T10:09:38Z" finished-at="2018-07-12T10:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manager_reviewArticlesSubmittedByEditor -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="71" started-at="2018-07-12T10:10:16Z" finished-at="2018-07-12T10:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_reviewArticlesSubmittedByEditor status=SUCCESS method=TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor()[pri:4, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="569" started-at="2018-07-12T10:10:16Z" finished-at="2018-07-12T10:10:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="writer_ReworkOnArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="writer_ReworkOnArticles" duration-ms="18552" started-at="2018-07-12T10:10:17Z" finished-at="2018-07-12T10:10:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writer_ReworkOnArticles -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="71" started-at="2018-07-12T10:10:35Z" finished-at="2018-07-12T10:10:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=writer_ReworkOnArticles status=SUCCESS method=TextmercatoEndEndFlow.writer_ReworkOnArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="597" started-at="2018-07-12T10:10:35Z" finished-at="2018-07-12T10:10:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ApproveReworkArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_ApproveReworkArticles()[pri:6, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="manager_ApproveReworkArticles" duration-ms="32423" started-at="2018-07-12T10:10:36Z" finished-at="2018-07-12T10:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manager_ApproveReworkArticles -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="76" started-at="2018-07-12T10:11:08Z" finished-at="2018-07-12T10:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_ApproveReworkArticles status=SUCCESS method=TextmercatoEndEndFlow.manager_ApproveReworkArticles()[pri:6, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ApproveReworkArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="setUp" is-config="true" duration-ms="601" started-at="2018-07-12T10:11:08Z" finished-at="2018-07-12T10:11:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="wrtiter_VerifyProjCompleted()[pri:7, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="wrtiter_VerifyProjCompleted" duration-ms="11226" started-at="2018-07-12T10:11:09Z" finished-at="2018-07-12T10:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrtiter_VerifyProjCompleted -->
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="reportWrapUp" is-config="true" duration-ms="77" started-at="2018-07-12T10:11:20Z" finished-at="2018-07-12T10:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrtiter_VerifyProjCompleted status=SUCCESS method=TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted()[pri:7, instance:testcases.TextmercatoEndEndFlow@4566e5bd] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcases.TextmercatoEndEndFlow@4566e5bd]" name="close" is-config="true" duration-ms="269" started-at="2018-07-12T10:11:20Z" finished-at="2018-07-12T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.TextmercatoEndEndFlow -->
+    </test> <!-- TestName -->
+  </suite> <!-- Suite -->
+</testng-results>
