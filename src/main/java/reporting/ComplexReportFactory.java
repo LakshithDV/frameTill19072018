@@ -16,12 +16,14 @@ public class ComplexReportFactory {
 	private static Map<String, ExtentTest> nameToTestMap = new HashMap<String, ExtentTest>();
 
 	private synchronized static ExtentReports getExtentReport() {
+
 		String fileName = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
 
 		if (reporter == null) {
 			// you can get the file name and other parameters here from a
 			// config file or global variables
-			reporter = new ExtentReports("Results/AutomationReport"+fileName+".html", true, NetworkMode.OFFLINE);
+			// reporter = new ExtentReports("Results/AutomationReport"+fileName+".html", true, NetworkMode.OFFLINE);
+			reporter = new ExtentReports("Results/AutomationReport.html", true, NetworkMode.OFFLINE);
 		}
 		return reporter;
 	}

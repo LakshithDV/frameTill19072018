@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import utils.WebBasePage;
 
@@ -20,7 +21,7 @@ import static reporting.ComplexReportFactory.getTest;
 public class DashboardPage extends WebBasePage {
 
     /*
-    *  Hare we are working with the dashabard  and we are trying to create large batch.
+    *  Hare we are working with the dashabard.
     *
     * */
     WebDriver driver;
@@ -508,6 +509,7 @@ public class DashboardPage extends WebBasePage {
 
     public void Uplodfile (Map<String, String> data) {
 
+        try{
 
         findElementVisibility(By.xpath("//label[@for='attachment']"),10);
         String filename=System.getProperty("user.dir")+"//src//main//resources//uploadfiles//sample.doc";
@@ -516,6 +518,9 @@ public class DashboardPage extends WebBasePage {
         uploadFile.sendKeys(filename);
         staticWait(1000);
 
+    }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void Compose(Map<String, String> data) {
@@ -586,5 +591,208 @@ public class DashboardPage extends WebBasePage {
 
     }
 
-}
+    /*************************************************************************************************************************
+     *  Created By lakshith DV on 07/19/2018 at 12.57PM
+     *  Functionality of client tab.
+     *
+     * ************************************************************************************************************************/
+
+    public void managerClientTab() {
+
+        clickElementVisible(By.xpath("//span[contains(text(),'Clients')]"), "clcik Client icone", 10);
+        String msg = getText(By.xpath("//a[@id='ui-id-1']"), "Clients billing page login", 3);
+        Assert.assertEquals(msg, "Completed Projects");
+
+    }
+
+    public void SeletingCliendBillingyesr(Map<String, String> data) {
+
+            staticWait(2000);
+            selectValueWithText(By.xpath("//body/div[@id='wrapper']//select[@id='year']"), data.get("ClentYear"), "Select_client_year", 10);
+            staticWait(2000);
+            selectValueWithText(By.xpath("//div[@id='tabs-1']//select[@id='month']"), data.get("Cmonth"), "Select_client_year", 10);
+            staticWait(5000);
+    }
+
+    public void ShowItem(Map<String, String> data) {
+
+
+        selectValueWithText(By.xpath("//select[@name='example_length']"), data.get("examplelength10"), "Select_client_year", 10);
+        staticWait(5000);
+        selectValueWithText(By.xpath("//select[@name='example_length']"), data.get("examplelength25"), "Select_client_year", 10);
+
+
+    }
+
+    public void Retrivedatafirst() {
+
+
+            clickElementVisible(By.xpath("//div[@id='tabs-1']//tbody//tr[1]//td[7]"), "clcik Pain date icone", 10);
+            clickElementVisible(By.xpath("//div[@class='col-md-6 col-sm-6']//button[@class='btn btn-danger btn_2']"), "clcik Retrive icone", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//div[@class='bootstrap-dialog-footer-buttons']//button[@class='btn btn-default'][1]"), "Conformation no icone", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//div[@class='col-md-6 col-sm-6']//button[@class='btn btn-danger btn_2']"), "clcik Retrive icone", 10);
+            clickElementVisible(By.xpath("//div[@class='bootstrap-dialog-footer-buttons']//button[@class='btn btn-default'][2]"), "Conformation yes icone", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//div[@class='bootstrap-dialog-footer-buttons']//button[@class='btn btn-default']"), "Conformation yes icone", 10);
+
+
+    }
+
+    public void selectPayMentData(Map<String, String> data) {
+
+        clickElementVisible(By.xpath("//*[@id='example']/tbody/tr[1]/td[7]/p/input"), "clcik Pain date icone", 10);
+        clickElementVisible(By.xpath("//button[@class='close']"), "close Pain date icone", 10);
+        staticWait(2000);
+        clickElementVisible(By.xpath("//*[@id='example']/tbody/tr[1]/td[7]/p/input"), "clcik Pain date icone", 10);
+        staticWait(2000);
+        enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "how much clients going to pay us ?", 10);
+        enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("AmountPaid"), "how much clients going to pay us ?", 10);
+        staticWait(2000);
+        clickElementVisible(By.xpath("//input[@id='marking_date']"), "Paid Date", 10);
+        staticWait(2000);
+        clickElementVisible(By.xpath("//a[contains(text(),'23')]"), "Dedline calender", 10);
+        staticWait(1000);
+        selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype1"), "Select_client_paymentType1", 10);
+        staticWait(2000);
+        selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype2"), "Select_client_paymentType2", 10);
+        staticWait(2000);
+        selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype3"), "Select_client_paymentType3", 10);
+        staticWait(2000);
+
+        enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);
+        enterElementVisible(By.xpath("//textarea[@id='others']"), data.get("OtherInfo"), "Other information what you want to use", 10);
+
+        clickElementVisible(By.xpath("//button[@class='btn btn-primary']"), "clcik Save button ", 10);
+        clickElementVisible(By.xpath("//button[@class='btn btn-default']"), "clcik Close button ", 10);
+        staticWait(2000);
+
+    }
+
+    public void Repayment(Map<String, String > data) {
+
+
+            clickElementVisible(By.xpath("//tbody//tr[1]//td[7]//p[1]//input[1]"), "clcik Pain date icone", 10);
+            clickElementVisible(By.xpath("//button[@class='btn btn-success btn_1']"), "clcik Change Reciept button ", 10);
+            enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "Amount we need to change", 10);
+            enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("AmountPaid"), "Amount we need to change", 10);
+            //enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("PaidDate"), "Other information what you want to use", 10);
+            selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype1"), "Select_client_paymentType1", 10);
+            staticWait(2000);
+            selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype2"), "Select_client_paymentType2", 10);
+            staticWait(2000);
+            selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype3"), "Select_client_paymentType3", 10);
+            staticWait(2000);
+            enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Empty"), "Amount we need to change", 10);
+            enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);
+            enterElementVisible(By.xpath("//textarea[@id='others']"), data.get("Empty"), "Amount we need to change", 10);
+            enterElementVisible(By.xpath("//textarea[@id='others']"), data.get("OtherInfo"), "Other information what you want to use", 10);
+            clickElementVisible(By.xpath("//button[@class='btn btn-primary']"), "clcik Save button ", 10);
+            clickElementVisible(By.xpath("//button[@class='btn btn-default']"), "clcik Close button ", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//button[@class='close']"), "clcik Actions Close button ", 10);
+            staticWait(2000);
+
+    }
+
+    public void genInvoice() {
+
+            clickElementVisible(By.xpath("//div[@id='tabs-1']//tbody//tr[1]//td[1]"), "clcik Client icone", 10);
+            staticWait(1000);
+            clickElementVisible(By.xpath("//tbody//tbody//tr[2]//td[1]"), "clcik Client icone", 10);
+            staticWait(1000);
+            clickElementVisible(By.xpath("//button[@id='download_invoice_excel']"), "clcik Client icone", 10);
+            staticWait(1000);
+            //clickElementVisible(By.xpath("//input[@id='gen_invoice'][@type='submit']"), "clcik Client icone", 10);
+            clickElementVisible(By.xpath("//div[@id='tabs-1']//tbody//tr[1]//td[1]"), "clcik Client icone", 10);
+            staticWait(1000);
+
+
+
+    }
+
+    public void viewClienttab(Map<String, String > data) {
+
+
+            clickElementVisible(By.xpath("//li[@id='1']"), "View Client icone", 10);
+            selectValueWithText(By.xpath("//select[@name='example1_length']"), data.get("examplelength10"), "Select_client_year", 10);
+            staticWait(5000);
+            selectValueWithText(By.xpath("//select[@name='example1_length']"), data.get("examplelength25"), "Select_client_year", 10);
+
+
+    }
+
+    public void clientDetailView() {
+
+
+            clickElementVisible(By.xpath("//th[@class='sorting_desc']"), "clcik to sort Client view", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//table[@id='example1']//tbody//tr[1]//td[1]"), "clcik view Client Details", 10);
+            staticWait(2000);
+            //clickElementVisible(By.xpath("//li[@id='tab_ii']"), "Client Bank Details", 10);
+            staticWait(2000);
+            clickElementVisible(By.xpath("//li[@id='tab_iii']"), "Client contact Details", 10);
+            //Close button
+            clickElementVisible(By.xpath("//div[@class='light-box-content article_stats_content']//a[@class='cls-btn']"), "Close Client detail tab", 10);
+            staticWait(2000);
+
+    }
+
+    public void newClient(Map<String, String > data) {
+
+            clickElementVisible(By.xpath("//a[@id='ui-id-3']"), "clcik to add new client", 10);
+
+            enterElementVisible(By.xpath("//input[@name='client_regd_name'][@type='text']"), data.get("clirename"), "client_regd_name", 10);
+
+            enterElementVisible(By.xpath("//input[@name='client_business_name'][@type='text']"), data.get("clibusname"), "client_business_name", 10);
+
+            selectValueWithText(By.xpath("//select[@id='industry_id']"), data.get("IndustryType"), "Select_client_Industry Type", 10);
+
+            enterElementVisible(By.xpath("//input[@name='address_line_1'][@type='text']"), data.get("AddressL1"), "client_Address1", 10);
+
+            enterElementVisible(By.xpath("//input[@name='address_line_2'][@type='text']"), data.get("AddressL2"), "client_Address2", 10);
+
+            selectValueWithText(By.xpath("//select[@id='select_country']"), data.get("Country"), "Select_client_Country", 10);
+
+            selectValueWithText(By.xpath("//input[@name='state']"), data.get("State"), "Select_client_state", 10);
+
+            clickElementVisible(By.xpath("//div[@class='biggerc styledCheckbox']"), "clcik check box of siz", 10);
+
+            staticWait(3000);
+            clickElementVisible(By.xpath("//div[@class='biggerc styledCheckbox']"), "clcik check box of siz", 10);
+
+            enterElementVisible(By.xpath("//input[@name='contact_1_name']"), data.get("Contact1"), "client_Contact1", 10);
+
+            enterElementVisible(By.xpath("//input[@name='contact_1_mail']"), data.get("Contact2"), "client_Contact2", 10);
+
+            enterElementVisible(By.xpath("//input[@name='contact_1_phone']"), data.get("phone"), "client_Phone_Number", 10);
+
+            clickElementVisible(By.xpath("//input[@value='Create']"), "Create New Client", 10);
+    }
+
+
+
+    public void ClientTab(Map<String, String> data) {
+
+        managerClientTab();
+        SeletingCliendBillingyesr(data);
+        ShowItem(data);
+        Retrivedatafirst();
+        selectPayMentData(data);
+        Repayment(data);
+        genInvoice();
+        viewClienttab(data);
+        clientDetailView();
+        newClient(data);
+
+    }
+
+
+    public void Client(Map<String, String> data) {
+
+        ClientTab(data);
+    }
+
+    }
 

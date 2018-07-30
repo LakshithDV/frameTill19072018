@@ -2,6 +2,7 @@ package testcases;
 
 import org.testng.annotations.Test;
 import pageobjects.Editor.*;
+import pageobjects.FrontEnd.frontEnd;
 import pageobjects.Manager.*;
 import pageobjects.Manager.DashboardPage;
 import pageobjects.Writer.SubmitArticlesPage;
@@ -15,11 +16,19 @@ public class TextmercatoEndEndFlow extends WebTestBase{
      //String projectId ="3918";
 /*
 *  Created by lakshith on 16/072018 time 3.22Pm
-*   Functionality Manager profile page.
+*   Complet Functionality of our dashbopard.
 * */
 
-  String projectId =null;
     @Test(priority = 0)
+    public void frontEndTesting() {
+        // Complete FrontEnd Testing for our dashboard.
+        Map<String, String> contactdata = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
+        frontEnd Fndtest =new frontEnd(driver);
+        Fndtest.Frontendtest(contactdata);
+    }
+
+     /* String projectId =null;
+    @Test(priority = 1)
     public void manager_profilepage() {
         //Filling Manager profile page.
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
@@ -32,7 +41,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 
     }
 
-   @Test(priority =1)
+ @Test(priority =2)
     public void manager_CreateProject() {
         //Manager login and create project and submit to writer.
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
@@ -55,7 +64,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 
         login.clickLogout();
     }
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void writer_SubmitArticles() {
         Map<String, String> writerData = new ExcelParsing().getValueInDiffColumns(excelpath, "WriterProfile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -68,7 +77,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         login.clickLogout();
 
     }
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void manager_ReviewArticles() {
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -82,7 +91,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         submittedpage.approveReworkAndWriterAssign();
         login.clickLogout();
     }
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void editor_ApproveAndRejectArticles() {
         Map<String, String> EditorData = new ExcelParsing().getValueInDiffColumns(excelpath, "EditorProfile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -94,7 +103,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         new ProjectsUnderReviewPage(driver).approveAndRejectProject();
         login.clickLogout();
     }
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void manager_reviewArticlesSubmittedByEditor() {
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -108,7 +117,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         submittedpage.approveRejectArticleSubmittedByEditor();
         login.clickLogout();
     }
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void writer_ReworkOnArticles() {
         Map<String, String> writerData = new ExcelParsing().getValueInDiffColumns(excelpath, "WriterProfile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -118,7 +127,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         new pageobjects.Writer.DashboardPage(driver).selectProjectAndApproveAllRejected(projectId);
         login.clickLogout();
     }
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void manager_ApproveReworkArticles() {
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -135,7 +144,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         dashboard.findCompletedProject(projectId);
         login.clickLogout();
     }
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void wrtiter_VerifyProjCompleted(){
         Map<String, String> writerData = new ExcelParsing().getValueInDiffColumns(excelpath, "WriterProfile", "Testdata");
         TextmercatoLogin login = new TextmercatoLogin(driver);
@@ -149,9 +158,9 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         submitArt.downloadFiles(projectId);
 
     }
-
+*/
     // Full flow was created by Lakshith.
-    @Test(priority =9)
+   /* @Test(priority =10)
     public void manager_Tickets(){
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         // from here i was giving the commend to pick the data from the excelsheet, In the excel sheet select the coloum name is "Validprofile" and page name is Testdata, from here we need to select the data.
@@ -167,7 +176,7 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 
     }
 
-    @Test(priority =10)
+    @Test(priority =11)
     public void manager_Messages() {
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         // from here i was giving the commend to pick the data from the excelsheet, In the excel sheet select the coloum name is "Validprofile" and page name is Testdata, from here we need to select the data.
@@ -183,9 +192,18 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 
     }
 
+    @Test(priority =12)
+    public void dashboardClientpage() {
+        Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
+        Map<String, String> clientdata = new ExcelParsing().getValueInDiffColumns(excelpath, "Create", "Createproject");
+        TextmercatoLogin login = new TextmercatoLogin(driver);
+        DashboardPage Clientbilling = new DashboardPage(driver);
 
+        //Manager will login and open the tickets.
 
+        login.login(ManagerData);
+        Clientbilling.Client(clientdata);
 
-
+    }*/
 
 }
