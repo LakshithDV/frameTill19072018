@@ -1,0 +1,15 @@
+lickElementVisible(By.xpath("//a[@id='first_get_quote_a']"),"Click first Image contact us",10);
+        String msg = getText(By.xpath("//h1[contains(text(),'Contact Us')]"), "Verify Contact Us page", 3);
+        Assert.assertEquals(msg, "Contact Us");
+        staticWait(2000);
+        enterElementVisible(By.xpath("//input[@id='full_name'][@name='full_name']/."), data.get("Fullnam"), "Enter the full name to contact", 10);
+        staticWait(2000);
+
+        enterElementVisible(By.xpath("//input[@id='email_address'][@name='email_address']/."), data.get("Emailcon"), "Enter the full name to contact", 10);
+        staticWait(2000);
+
+        enterElementVisible(By.xpath("//input[@id='contact_number'][@name='contact_number']/."), data.get("Connum"), "Enter the full name to contact", 10);
+        staticWait(2000);
+
+        enterElementVisible(By.xpath("//input[@id='company'][@name='company']/."), data.get("CmpnyNam"), "Enter the full name to contact", 10);
+        staticWait(2000);
